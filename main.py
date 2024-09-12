@@ -11,6 +11,8 @@ class computer:
 
 obj = computer()
 obj.sell()
-obj.__maxprize = 1000
-print(obj.__maxprize)
+obj.__maxprize = 1500
+obj.sell()
 
+obj.set_max_prize(1000)
+obj.sell()
