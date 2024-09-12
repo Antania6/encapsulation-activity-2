@@ -1,14 +1,16 @@
 class computer:
     def __init__(self):
-        self.maxprize = 900
+        self.__maxprize = 900
 
     def sell(self):
-        print(f"selling prize is {self.maxprize}")
+        print(f"selling prize is {self.__maxprize}")
 
     def set_max_prize(self,abc):
-        self.maxprize = abc
+        self.__maxprize = abc
 
 
 obj = computer()
 obj.sell()
-print(obj.maxprize)
+obj.__maxprize = 1000
+print(obj.__maxprize)
+
